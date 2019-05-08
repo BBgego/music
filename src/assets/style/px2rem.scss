@@ -1,0 +1,6 @@
+@function px2rem($px){
+	@return $px*320/$designWidth/20 + rem;
+}
+
+// 设计稿是多少px的宽度，下面就定义为多少px
+$designWidth: 750;
