@@ -1,6 +1,8 @@
 <template>
   <div class="footer_box">
-    <a class="footer_box__action" href="#">安装QQ音乐 发现更多精彩</a>
+    <div class="footer_box__bd">
+      <a class="footer_box__action" href="#">安装QQ音乐 发现更多精彩</a>
+    </div>
   </div>
 </template>
 
@@ -13,6 +15,10 @@ export default {
 @import "@/assets/style/base.scss";
 
 .footer_box {
+  padding-top: px2rem(130);
+}
+
+.footer_box__bd {
   position: fixed;
   bottom: 0;
   left: 0;
