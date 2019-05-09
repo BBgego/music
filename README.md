@@ -29,6 +29,7 @@ npm run lint
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#this is my qqmusic project
+```
+call me phone
+```
