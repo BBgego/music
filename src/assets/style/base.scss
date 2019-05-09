@@ -1,0 +1,14 @@
+//基础样式
+@import './px2rem.scss';
+@import './variable.scss';
+
+//全局样式
+
+body > div {
+  height: 100%;
+}
+
+body {
+  font-size: px2rem(50);
+}
+

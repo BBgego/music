@@ -1,16 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Home from './views/Home.vue'
+
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: Home
-    // },
+    {
+      path: '/',
+      name: 'home',
+      component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
+      // children:[
+      //   {
+      //     path:'recommend',
+      //     name:'recommend',
+      //     component: () => import(/* webpackChunkName: "recommend" */ './views/Recommend.vue')
+      //   },
+      //   {
+      //     path:'toplist',
+      //     name:'toplist',
+      //     component: () => import(/* webpackChunkName: "toplist" */ './views/TopList.vue')
+      //   },
+      //   {
+      //     path:'search',
+      //     name:'search',
+      //     component: () => import(/* webpackChunkName: "search" */ './views/Search.vue')
+      //   }
+      // ]
+    },
     // {
     //   path: '/about',
     //   name: 'about',
