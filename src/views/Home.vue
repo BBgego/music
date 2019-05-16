@@ -5,6 +5,7 @@
     </div>
     <div class="nav">
       <tab-bar></tab-bar>
+      <router-view></router-view>
     </div>
     <div class="footer">
       <footer-bar></footer-bar>
@@ -33,11 +34,5 @@ export default {
   background:#fff;
 }
 
-.nav{
-  background: rgb(0,255,0);
-}
-.header {
-
-}
 </style>
 

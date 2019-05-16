@@ -10,23 +10,24 @@ export default new Router({
       path: '/',
       name: 'home',
       component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
-      // children:[
-      //   {
-      //     path:'recommend',
-      //     name:'recommend',
-      //     component: () => import(/* webpackChunkName: "recommend" */ './views/Recommend.vue')
-      //   },
-      //   {
-      //     path:'toplist',
-      //     name:'toplist',
-      //     component: () => import(/* webpackChunkName: "toplist" */ './views/TopList.vue')
-      //   },
-      //   {
-      //     path:'search',
-      //     name:'search',
-      //     component: () => import(/* webpackChunkName: "search" */ './views/Search.vue')
-      //   }
-      // ]
+      children:[
+        {
+          path:'recommend',
+          alias:'',
+          name:'recommend',
+          component: () => import(/* webpackChunkName: "recommend" */ './views/Recommend.vue')
+        },
+        {
+          path:'toplist',
+          name:'toplist',
+          component: () => import(/* webpackChunkName: "toplist" */ './views/TopList.vue')
+        },
+        {
+          path:'search',
+          name:'search',
+          component: () => import(/* webpackChunkName: "search" */ './views/Search.vue')
+        }
+      ]
     },
     // {
     //   path: '/about',
